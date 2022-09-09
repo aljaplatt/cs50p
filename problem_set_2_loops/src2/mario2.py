@@ -2,7 +2,7 @@
 
 
 def main():
-    print_column(3)
+    print_column(5)
 
 
 def print_column(height):

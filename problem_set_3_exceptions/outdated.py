@@ -15,6 +15,7 @@ months = [
 
 while True:
     date = input("Date: ")
+    # check date strings for char that will indicate what format the string is in
     if "/" in date:
         month, day, year = date.split("/")
     elif "," in date:

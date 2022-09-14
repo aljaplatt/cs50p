@@ -15,9 +15,9 @@ else:
     sys.exit(1)
 
 try:
-    r = requests.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+    r = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     # print(r) # <Response [200]> - Need to convert to dict
-    response = r.json() # converts to json 
+    response = r.json()  # converts to json
     # print(response) # get a dictionary back
     # print(response["bpi"])
     # print(response["bpi"]["USD"])

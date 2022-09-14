@@ -10,4 +10,8 @@ def square(n):
     return n * n
 
 
-main()
+#  if were importing square from another file - you wouldn't want to trigger the main function in this module
+if __name__ == "__main__":
+    main()
+
+#! cannot handles floats

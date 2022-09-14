@@ -7,3 +7,8 @@ def test_default():
 
 def test_argument():
     assert hello("David") == "hello, David"
+
+
+# __init__.py treat the test folder as a package
+
+# pytest test

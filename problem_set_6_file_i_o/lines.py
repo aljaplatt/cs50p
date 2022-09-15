@@ -13,7 +13,7 @@ def main():
     # Loop through the lines and check if starts with # or whitespace
     count_lines = 0
     for line in lines:
-        if check_comment_or_empty_line(line) == True:
+        if check_if_line(line) == True:
             count_lines += 1
     print(count_lines)
 
@@ -27,7 +27,7 @@ def check_command_line_arg():
     if ".py" not in sys.argv[1]:
         sys.exit("Not a Python file")
 
-def check_comment_or_empty_line(line):
+def check_if_line(line):
     if line.lstrip().startswith('#'):
         return False
     if line.isspace():

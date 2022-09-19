@@ -17,9 +17,15 @@ def main():
 
 
 def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    return Student(name, house)
+    while True:
+        name = input("Name: ")
+        house = input("House: ")
+        try:
+            return Student(name, house)
+        except ValueError:
+            print("Invalid data")
+            continue
+
 
 
 if __name__ == "__main__":

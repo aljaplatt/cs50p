@@ -3,7 +3,10 @@
 
 class Student:
     def __init__(self, name, house):
+        # if these are triggered they will go thought the getters/setters... so the return values of those will be the values of these self.name etc
         self.name = name
+        #? Why is this house not using underscore? _house
+        # would skip setter error checking
         self.house = house
 
     def __str__(self):

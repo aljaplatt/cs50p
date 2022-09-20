@@ -18,6 +18,7 @@ class Student:
     # - name the function what you would name the variable
     @property
     def house(self):
+        # adding the underscore prevents conflict between variable house and function house naming
         return self._house
 
     # ^ this allows you to use the decorator @house

@@ -10,11 +10,17 @@ class Student:
 
     def __str__(self):
         return f"{self.name} from {self.house}"
+    
+    #? a property is an attribute that has greater functionality to increase control  
 
+    #* decorators are functions that modify the behaviour of other functions
+    # getter
+    # - name the function what you would name the variable
     @property
     def house(self):
         return self._house
 
+    # ^ this allows you to use the decorator @house
     @house.setter
     def house(self, house):
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:

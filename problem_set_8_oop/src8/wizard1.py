@@ -2,25 +2,26 @@
 
 
 class Wizard:
-    def __init__(self, name):
+    def __init__(self, name, patronus):
         if not name:
             raise ValueError("Missing name")
         self.name = name
+        self.patronus = patronus
 
     ...
 
 
 class Student(Wizard):
-    def __init__(self, name, house):
-        super().__init__(name)
+    def __init__(self, name, house, patronus):
+        super().__init__(name, patronus)
         self.house = house
 
     ...
 
 
 class Professor(Wizard):
-    def __init__(self, name, subject):
-        super().__init__(name)
+    def __init__(self, name, subject, patronus):
+        super().__init__(name, patronus)
         self.subject = subject
 
     ...
@@ -28,5 +29,5 @@ class Professor(Wizard):
 
 wizard = Wizard("Albus")
 student = Student("Harry", "Gryffindor")
-professor = Professor("Severus", "Defense Against the Dark Arts")
+professor = Professor("Severus", "Defence Against the Dark Arts")
 ...

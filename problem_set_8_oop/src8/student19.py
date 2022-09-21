@@ -37,7 +37,8 @@ def main():
     student = get_student()
     print(student)
 
-
+# This should be inside the Student class, see student20.py
+# not wrong but more bad design - code smells!
 def get_student():
     name = input("Name: ")
     house = input("House: ")

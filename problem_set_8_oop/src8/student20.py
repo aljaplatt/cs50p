@@ -9,14 +9,20 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
 
+    # class method - I can call this method without instantiating a student object first - do not need an existing student.
     @classmethod
     def get(cls):
         name = input("Name: ")
         house = input("House: ")
+        # create an object of the current class - whatever cls is - in this case Student
         return cls(name, house)
 
+# ====================================================
+# Above is all student functionality abstracted/ encapsulated into a class 
+# ====================================================
 
 def main():
+    # 
     student = Student.get()
     print(student)
 
